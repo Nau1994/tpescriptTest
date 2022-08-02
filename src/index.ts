@@ -23,5 +23,5 @@ let pages:Partial<Pages>={};
 pages['home']={id:10,title:'home title'} //pages.home={id:10,title:'home title'}
 pages['services']={id:20,title:'services title'}
 pages['about']={id:30,title:'about title'}
-pages['contact']={id:40,title:'contact title'}
+pages['contact']={id:50,title:'contact title'}
 console.log(pages as Pages)
