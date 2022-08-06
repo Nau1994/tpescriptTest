@@ -3,7 +3,7 @@ type user={
     id5678:string,
     }
 
-export class Login{
+export class LoginApi{
      
     private  pass:user={
     id1234:'1234',

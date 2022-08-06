@@ -1,10 +1,10 @@
-import { Login } from "./Login";
+import { LoginApi } from "./LoginApi";
 
-let login = new Login('id1234','1234');
+let login = new LoginApi('id1234','1234');
 // let login = new Login('id1234','1235');
 let res:string='';
 
-console.log("Before Promise"+res)
+console.log("Before Promise:"+res)
 
 login.authenticate()
   .then(
@@ -31,14 +31,14 @@ login.authenticate()
     //chained
     function (value) {
         res=value;
-        console.log("Inside then Promise "+res);
+        console.log("Inside then Promise: "+res);
       console.log(value);
     //   console.log("Success in chained Resolve()");
     }
   )
   .catch(function (value) {
     res=value;
-    console.log("Inside catch Promise "+res);
+    console.log("Inside catch Promise: "+res);
     console.log(value);
     // console.log("Reject in Catch");
   })
@@ -46,4 +46,4 @@ login.authenticate()
     console.log("finally ");
   });
 
-  console.log("After Promise"+res)
+  console.log("After Promise: "+res)
