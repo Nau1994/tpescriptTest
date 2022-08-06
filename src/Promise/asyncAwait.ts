@@ -1,5 +1,7 @@
 import { LoginApi } from "./LoginApi";
-async function login() {
+
+class Login{
+async login() {
    
 
 let login = new LoginApi('id1234','1234');
@@ -18,5 +20,6 @@ try{
   console.log("After Promise: "+name)
 
 }
+}
 
-login()
+(new Login).login()
